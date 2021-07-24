@@ -2,6 +2,7 @@ import { getSession } from 'next-auth/client'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Login from '../components/Login'
+import Sidebar from '../components/Sidebar'
 
 export default function Home({ session}) {
   if(!session){
@@ -9,7 +10,7 @@ export default function Home({ session}) {
 
   };
   return (
-    <div>
+    <div className='h-screen bg-gray-100 overflow-hidden'>
       <Head>
         <title>Facebook</title>
      
@@ -18,6 +19,7 @@ export default function Home({ session}) {
       <Header />
       <main>
         {/* sidebar*/}
+        <Sidebar />
         {/* feed*/}
         {/* widget*/}
       </main>
