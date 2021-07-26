@@ -9,6 +9,7 @@ function Login() {
         height={400}
         width={400}
         objectFit="contain"
+        alt='image'
       />
       <h1 onClick={signIn} className='p-5 bg-blue-500 rounded-full text-white 
       text-center cursor-pointer hover:bg-blue-400'

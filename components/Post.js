@@ -6,7 +6,7 @@ function Post({ name, message, email, postImage, image, timestamp}) {
     <div className='flex flex-col'>
       <div className='bg-white p-5 mt-5 rounded-t-2xl shadow-sm'>
         <div className='flex items-center space-x-2'>
-          <img className='rounded-full' src={image} width={40} height={40} alt=''/>
+          <Image className='rounded-full' src={image} width={40} height={40} alt=''/>
           <div>
             <p className='font-medium'>{name}</p>
             {timestamp ? (
@@ -23,7 +23,7 @@ function Post({ name, message, email, postImage, image, timestamp}) {
       </div>
       {postImage && (
         <div className='relative h-56 md:h-96 bg-white'>
-          <Image src={postImage} objectFit='cover' layout='fill'/>
+          <Image src={postImage} objectFit='cover' layout='fill' alt='image'/>
         </div>
       )}
 

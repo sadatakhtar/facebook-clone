@@ -67,6 +67,7 @@ function InputBox() {
           width={40}
           height={40}
           layout='fixed'
+          alt='image'
         />
         
         <form className='flex flex-1'>
@@ -83,7 +84,7 @@ function InputBox() {
             filter hover:brightness-110 transition duration-150 
             transform hover:scale-105 scale-105 cursor-pointer'
             >
-              <img className='h-10 object-contain' src={imageToPost} alt='image' />
+              <Image className='h-10 object-contain' src={imageToPost} alt='image' width={40} height={40}/>
               <p className='text-xs text-red-500 text-center'>Remove</p>
             </div>
 
